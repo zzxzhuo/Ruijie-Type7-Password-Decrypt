@@ -15,7 +15,7 @@ Ruijie Networks Co., Ltd. is one of the Chinese vendor majored in enterprise net
 # Insight
 There are a number of papers regarding Cisco type 7 password vulnerability, you may look into them if you are interested into greater details. To make it simple, Cisco's *Vigenère cipher* requires a constant string *c*, the algorithm pick a substring of *c* starting from some random position, trim the substring to match the length of cleartext, and do a character-by-character xor for ciphertext. Before getting saved to configuration file, prepend the picked "random position" to ciphertext.
 
-As we may know xor is a binary operation, by performing the same calculation twice, the ouput cancels out back to orignal value. e.g. 1 XOR 0 XOR 0 = 1. That beging said, if someone somehow get hands on the constant string *c*, he/she can reverse the steps and decrypt a type 7 ciphertext.
+As we may know xor is a binary operation, by performing the same calculation twice, the ouput cancels out back to orignal value. e.g. 1 XOR 0 XOR 0 = 1. Having said that, if someone somehow get hands on the constant string *c*, he/she can reverse the steps and decrypt a type 7 ciphertext.
 
 In order to extract the constant string *c*, we first need to have some sample ciphertexts. Those 16 are encrypted form of 25 `a`s
 ```
