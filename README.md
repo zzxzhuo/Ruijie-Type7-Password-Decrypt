@@ -36,7 +36,7 @@ In order to extract the constant string *c*, we first need to have some sample c
 14134b0c20132a2d0444002833160e0d07473f32150013330529
 154b0c20132a2d0444002833160e0d07473f3215001333052942
 ```
-by xor'ing one of the 25 hex value from above with alphabet `a` we can easily get string *c* implemented in Ruijie's codebase:
+by xor'ing every one of the 25 hex value from above with alphabet `a` we can easily get string *c* implemented in Ruijie's codebase:
 
 `*@##Wxf^cOurGer*mArKLe%aIRwolf&^StarRdH#`
 
